@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "523078194494",
+    "firebase_url": "https://plants-shop-d1636-default-rtdb.firebaseio.com",
+    "project_id": "plants-shop-d1636",
+    "storage_bucket": "plants-shop-d1636.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:523078194494:android:d1c37517f70eb69c8e486f",
+        "android_client_info": {
+          "package_name": "com.example.plants_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "523078194494-toq0sng531h5igdm07vr7g1l8euqf5o3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCtWapbnm6ym_IE5XM2lSgzMsxSe7I_6A8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "523078194494-toq0sng531h5igdm07vr7g1l8euqf5o3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:523078194494:android:fa75ad8f22047a828e486f",
+        "android_client_info": {
+          "package_name": "com.example.plants_shop"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "523078194494-toq0sng531h5igdm07vr7g1l8euqf5o3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCtWapbnm6ym_IE5XM2lSgzMsxSe7I_6A8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "523078194494-toq0sng531h5igdm07vr7g1l8euqf5o3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
