@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:plants_shop/screens/home_screen/pages/favourite_page.dart';
 import 'package:plants_shop/screens/home_screen/pages/home_page.dart';
 import 'package:plants_shop/screens/home_screen/pages/order_page.dart';
-import 'package:plants_shop/screens/order_screen.dart';
+import 'package:plants_shop/screens/order_screen/order_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   @override
@@ -37,16 +37,6 @@ class _HomeScreenState extends State<HomeScreen> {
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         elevation: 0.0,
-        // leading: IconButton(
-        //   icon: ClipRRect(
-        //     borderRadius: BorderRadius.circular(20),
-        //     child: Image.asset(
-        //       "assets/images/avatar.jpg",
-        //       fit: BoxFit.cover,
-        //     ),
-        //   ),
-        //   onPressed: () {},
-        // ),
         title: Text(
           "${_appBarOptions[_selectedIndex]}",
           style: TextStyle(
