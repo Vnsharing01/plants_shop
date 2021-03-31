@@ -4,7 +4,6 @@ import 'package:flutter/services.dart';
 
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_statusbarcolor/flutter_statusbarcolor.dart';
-import 'package:plants_shop/screens/home_screen/components/home_banner.dart';
 import 'package:plants_shop/screens/home_screen/home_screen.dart';
 
 Future<void> main() async {
