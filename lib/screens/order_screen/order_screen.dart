@@ -17,70 +17,72 @@ class OrderScreen extends StatelessWidget {
         ),
         centerTitle: true,
       ),
-      body: Container(
-        width: double.infinity,
-        height: MediaQuery.of(context).size.height,
-        padding: EdgeInsets.all(10),
-        child: StreamBuilder(
-            stream: order.snapshots(),
-            builder: (context, AsyncSnapshot<QuerySnapshot> snapshot) {
-              if (!snapshot.hasData) {
-                return const Text("Loading...");
-              }
-              return ListView(
-                children: snapshot.data.docs.map((DocumentSnapshot document) {
-                  return Card(
-                    child: Container(
-                      width: double.infinity,
-                      height: 120,
-                      padding: EdgeInsets.symmetric(horizontal: 10),
-                      child: Row(
-                        children: [
-                          Container(
-                            width: 100,
-                            height: 100,
-                            padding: EdgeInsets.all(5),
-                            child: Image.network(
-                              document.data()['image'],
-                              fit: BoxFit.cover,
-                            ),
-                          ),
-                          Expanded(
-                            child: Container(
-                              padding: EdgeInsets.only(left: 10, top: 10),
-                              child: Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                mainAxisAlignment: MainAxisAlignment.start,
-                                children: [
-                                  Text(
-                                    document.data()['name'],
-                                    overflow: TextOverflow.ellipsis,
-                                    style: TextStyle(
-                                      fontSize: 20,
-                                      fontWeight: FontWeight.bold,
-                                    ),
-                                  ),
-                                  SizedBox(height: 8),
-                                  TextAmountAndPrice(
-                                    text: "Số lượng: ",
-                                    textInfo:
-                                        document.data()['amount'].toString(),
-                                  ),
-                                  TextAmountAndPrice(
-                                    text: "Giá: ",
-                                    textInfo: document.data()['price'],
-                                  ),
-                                ],
+      body: SingleChildScrollView(
+        child: Container(
+          width: double.infinity,
+          height: MediaQuery.of(context).size.height,
+          padding: EdgeInsets.all(10),
+          child: StreamBuilder(
+              stream: order.snapshots(),
+              builder: (context, AsyncSnapshot<QuerySnapshot> snapshot) {
+                if (!snapshot.hasData) {
+                  return const Text("Loading...");
+                }
+                return ListView(
+                  children: snapshot.data.docs.map((DocumentSnapshot document) {
+                    return Card(
+                      child: Container(
+                        width: double.infinity,
+                        height: 120,
+                        padding: EdgeInsets.symmetric(horizontal: 10),
+                        child: Row(
+                          children: [
+                            Container(
+                              width: 100,
+                              height: 100,
+                              padding: EdgeInsets.all(5),
+                              child: Image.network(
+                                document.data()['image'],
+                                fit: BoxFit.cover,
                               ),
                             ),
-                          )
-                        ],
+                            Expanded(
+                              child: Container(
+                                padding: EdgeInsets.only(left: 10, top: 10),
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  mainAxisAlignment: MainAxisAlignment.start,
+                                  children: [
+                                    Text(
+                                      document.data()['name'],
+                                      overflow: TextOverflow.ellipsis,
+                                      style: TextStyle(
+                                        fontSize: 20,
+                                        fontWeight: FontWeight.bold,
+                                      ),
+                                    ),
+                                    SizedBox(height: 8),
+                                    TextAmountAndPrice(
+                                      text: "Số lượng: ",
+                                      textInfo:
+                                          document.data()['amount'].toString(),
+                                    ),
+                                    TextAmountAndPrice(
+                                      text: "Giá: ",
+                                      textInfo: document.data()['price'],
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            )
+                          ],
+                        ),
                       ),
-                    ),
-                  );
-                }).toList(),
-              );
-            }),
+                    );
+                  }).toList(),
+                );
+              }),
+        ),
       ),
     );
   }
