@@ -1,16 +1,20 @@
 # plants_shop
 
-A new Flutter project.
+plants_shop Flutter project.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+## màn hình chính 
+![image](https://user-images.githubusercontent.com/52748746/113106382-eac61b00-922c-11eb-87a5-924065c028d8.png)
 
-A few resources to get you started if this is your first Flutter project:
+## màn hình cây yêu thích
+![image](https://user-images.githubusercontent.com/52748746/113108064-cc611f00-922e-11eb-9f98-5acccf91e228.png)
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+## màn hình danh sách cây đã đặt hàng và màn hình đặt hàng 
+![image](https://user-images.githubusercontent.com/52748746/113106817-63c57280-922d-11eb-8d41-1d8fd13ca1d9.png)
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
+![image](https://user-images.githubusercontent.com/52748746/113107596-5066d700-922e-11eb-8cd4-2f0d98707756.png)
+
+## thông tin cây cảnh
+![image](https://user-images.githubusercontent.com/52748746/113107295-f403b780-922d-11eb-903a-bb3652b859d9.png)
