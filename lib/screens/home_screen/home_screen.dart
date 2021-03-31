@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:plants_shop/screens/home_screen/pages/favourite_page.dart';
 import 'package:plants_shop/screens/home_screen/pages/home_page.dart';
 import 'package:plants_shop/screens/home_screen/pages/order_page.dart';
+import 'package:plants_shop/screens/order_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   @override
@@ -36,16 +37,16 @@ class _HomeScreenState extends State<HomeScreen> {
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         elevation: 0.0,
-        leading: IconButton(
-          icon: ClipRRect(
-            borderRadius: BorderRadius.circular(20),
-            child: Image.asset(
-              "assets/images/avatar.jpg",
-              fit: BoxFit.cover,
-            ),
-          ),
-          onPressed: () {},
-        ),
+        // leading: IconButton(
+        //   icon: ClipRRect(
+        //     borderRadius: BorderRadius.circular(20),
+        //     child: Image.asset(
+        //       "assets/images/avatar.jpg",
+        //       fit: BoxFit.cover,
+        //     ),
+        //   ),
+        //   onPressed: () {},
+        // ),
         title: Text(
           "${_appBarOptions[_selectedIndex]}",
           style: TextStyle(
@@ -58,11 +59,19 @@ class _HomeScreenState extends State<HomeScreen> {
         actions: [
           Padding(
             padding: const EdgeInsets.only(right: 8.0),
-            child: CircleAvatar(
-              backgroundColor: Colors.green[700],
-              child: Icon(
-                Icons.shopping_cart_outlined,
-                color: Colors.white,
+            child: GestureDetector(
+              onTap: () {
+                Navigator.of(context)
+                    .push(MaterialPageRoute(builder: (context) {
+                  return OrderScreen();
+                }));
+              },
+              child: CircleAvatar(
+                backgroundColor: Colors.green[700],
+                child: Icon(
+                  Icons.shopping_cart_outlined,
+                  color: Colors.white,
+                ),
               ),
             ),
           ),

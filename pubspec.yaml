@@ -33,6 +33,7 @@ dependencies:
   google_fonts: 
   flutter_statusbarcolor:
   http:
+  fluttertoast:
 
   # firebase
   firebase_core: 
