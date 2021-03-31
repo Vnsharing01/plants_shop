@@ -11,3 +11,6 @@ A new Flutter project.
 
 ## màn hình danh sách cây đặt hàng 
 ![image](https://user-images.githubusercontent.com/52748746/113106817-63c57280-922d-11eb-8d41-1d8fd13ca1d9.png)
+
+## thông tin cây cảnh
+![image](https://user-images.githubusercontent.com/52748746/113107295-f403b780-922d-11eb-903a-bb3652b859d9.png)
